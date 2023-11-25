@@ -30,7 +30,11 @@
         <div id="intro-text">
           <h1>Nishtha Mahajan</h1>
           <p>
-            Hi there!
+            Hello! I am a prospective PhD student looking for positions in the areas of multi-agent systems, game theory and cooperative artificial intelligence. In particular, I am interested in studying interactions between autonomous decision-making agents (such as autonomous vehicles) and developing methods by which strategic planning of such interactions can improve the collective performance of a multi-agent system.
+		  <br>
+		  I was recently a Research Associate at the AI Institute, University of South Carolina where I worked with <a href="https://qizhg.github.io/">Prof. Qi Zhang</a> on <a href="https://arxiv.org/abs/2309.13206">Intent-Aware Autonomous Driving</a>.
+		  <br>
+		  I obtained my MS in Transportation and Infrastructure Systems from Purdue University. Prior to that, I graduated from Indian Institute of Technology Roorkee Roorkee with a major in Civil Engineering and minor specialization in Computer Science and Engineering. 
             <!-- <div id="more-bio" style="display: None">
               <br>
               <p>Nishtha Mahajan is...</p>
@@ -39,10 +43,10 @@
             <!-- <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
 			      <a href="mailto:nmahaja@alumni.purdue.edu">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://www.linkedin.com/in/mahajan-nishtha">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/nishthamahajan">GitHub</a>
+            <!-- <a href="https://github.com/nishthamahajan">GitHub</a> -->
             <br><br>
-            nmahaja at alumni dot purdue dot edu
-            <br><br>
+            <!-- nmahaja at alumni dot purdue dot edu
+            <br><br> -->
           </p>
         </div>
         <div id="intro-image">
@@ -52,14 +56,33 @@
 
       <div id="filters" class="button-group">
         <!-- <button class="button" data-filter="*">Show All</button> -->
-        <button class="button is-checked" data-filter=".highlight">Highlights</button>
+        <!-- <button class="button is-checked" data-filter=".highlight">Highlights</button>
         <button class="button" data-filter=".publication">Research</button>
         <button class="button" data-filter=".talk">Talks</button>
-        <button class="button" data-filter=".misc">Misc</button>
+        <button class="button" data-filter=".misc">Misc</button> -->
+	<button class="button is-checked" data-filter=".publication">Research</button>
       </div>
 
       <div class="grid">
 
+	<div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/abs/2309.13206" class="thumbnail">
+            <img src="images/intent1.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/abs/2309.13206">Intent-Aware Autonomous Driving: A Case Study on Highway Merging Scenarios</a></h3>
+            <p>
+              <b>Nishtha Mahajan</b>, Qi Zhang<br>
+                <i>Multi-Agent Dynamic Games Workshop at IROS 2023</i><br>
+                <a href="https://iros2023-madgames.f1tenth.org/proceedings.html">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/abs/2309.13206">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="data/IROS2023_Intent_Aware_AD.pdf">Slides</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+	</div>
+	
+	<!-- Start Template
         <!-- Highlights -->
         <div class="list-item highlight description" data-category="highlight">
           Some recent highlights from our research:
@@ -169,9 +192,10 @@
           <p class="date"></p>Position, Conference Workshop on <a href="workshoplink">WorkshopTitle</a>
         </div>
 
-      </div>
+      </div> 
+	End Template --> 
 
-      <div id="footer">Inspired by <a href="https://andyzeng.github.io/">Andy Zeng</a>'s website.</div>
+      <div id="footer">Thanks <a href="https://andyzeng.github.io/">Andy Zeng</a> for the template.</div>
 
     </div>
 
@@ -238,22 +262,22 @@
       //  }
       //}
 
-      function toggle_highlights() {
-        var x = document.getElementById("main-highlights");
-        var y = document.getElementById("more-highlights");
-        var b = document.getElementById("toggle_highlights_button")
-        if (y.style.display === "none") {
-          x.style.display = "none";
-          y.style.display = "block";
-          b.innerHTML = "Show less"
-          update_isotope();
-        } else {
-          x.style.display = "block";
-          y.style.display = "none";
-          b.innerHTML = "Show more"
-          update_isotope();
-        }
-      }
+      //function toggle_highlights() {
+      //  var x = document.getElementById("main-highlights");
+      //  var y = document.getElementById("more-highlights");
+      //  var b = document.getElementById("toggle_highlights_button")
+      //  if (y.style.display === "none") {
+      //    x.style.display = "none";
+      //    y.style.display = "block";
+      //    b.innerHTML = "Show less"
+      //    update_isotope();
+      //  } else {
+      //    x.style.display = "block";
+      //    y.style.display = "none";
+      //    b.innerHTML = "Show more"
+      //    update_isotope();
+      //  }
+      //}
 
       update_isotope();
 
