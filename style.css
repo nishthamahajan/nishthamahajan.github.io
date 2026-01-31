@@ -98,16 +98,16 @@ h1 {
 }
 
 #intro-image {
-  margin: 3em 0 0 2em;
-  width: 15em;
-  height: 15em;
+  margin: 10em 0 0 2em;
+  width: 12em;
+  height: 12em;
   float: left;
   overflow: hidden;
   border-radius: 1em;
 }
 
 #intro-image img {
-  width: 15em;
+  width: 12em;
 }
 
 /**************************************************/
@@ -126,8 +126,7 @@ h2 {
   font-size: 1.6em;
   line-height: 2.4em;
   margin-top: 0.5em;
-  /*color: #a0a8b0;*/
-  color: #6d7175;
+  color: #a0a8b0;
 }
 
 .selected h2 {
@@ -288,7 +287,8 @@ h3 a:hover {
 .publication p {
   font-size: 1em;
   line-height: 1.5em;
-  color: #a0a8b0;
+  /*color: #a0a8b0;*/
+  color: #6d7175;
 }
 
 .project-description {
